@@ -1,0 +1,91 @@
+.search-bar{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.search-bar .input-area{
+    display: flex;
+    margin: 0 5rem ;
+}
+.search-bar .input-area input{
+    border: 1px solid #ddd;
+    width: 100%;
+    padding:.5rem 1rem;
+    outline: 0;
+    border-top-right-radius:1rem ;
+    border-bottom-right-radius:1rem ;
+}
+.search-bar .input-area .icon{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-top-left-radius:1rem ;
+    border-bottom-left-radius:1rem ;
+    padding: 0.5rem 1rem;
+}
+.search-bar .list-view{
+    position: absolute;
+    z-index: 100;
+    background: #eee;
+    backdrop-filter: blur(2rem);
+    margin: 0 auto ;
+   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+   border-radius: 0.35rem;
+    top:3rem;
+    left: 5rem;
+}
+
+/* List Item */
+.list-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.25rem 1rem;
+    margin: .25rem;
+    border-radius: 0..25rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.list-item button {
+    margin-left: 1rem;
+    outline: 0;
+}
+
+/* Weather Card */
+.weather-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.weather-card .icon{
+    font-size: 3rem;
+}
+.weather-card .info{
+    margin-left: 2rem;
+}
+.weather-card .info strong{
+    font-weight: 900;
+    font-size: 1rem;
+}
+.weather-card .info p{
+    font-weight: 600;
+    font-size: .85rem; 
+}
+/* card view */
+.card-view{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+}
+
+.red{
+    color: #ff0909;
+}
+.green{
+    color: teal;
+}
+
